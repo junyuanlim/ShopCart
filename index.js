@@ -1,7 +1,8 @@
+require('dotenv').config()
 const express = require('express')
 const path = require('path')
 const app = express()
-const PORT = 3000
+const PORT = process.env.port || 5001
 
 app.use(express.static(path.join(__dirname, "./client/dist")))
 app.get("*", function(_, res) {

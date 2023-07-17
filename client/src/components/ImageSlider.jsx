@@ -54,7 +54,6 @@ export default function ImageSlider(props) {
                 <div className="absolute top-1/2 right-0 text-4xl text-gray-800 hover:text-gray-300 cursor-pointer">
                     <ion-icon onClick={handleNextImage} name="chevron-forward-outline"></ion-icon>
                 </div>
-                <div><h3 className="absolute right-1/4 top-1/4 text-3xl font-[Poppins] font-extrabold text-white">Text</h3></div>
             </div>
             <div className="flex justify-center pt-5 gap-3">
                 {imageArray.map((image, imageIndex) => {
